@@ -101,6 +101,10 @@ hr {
   display: none;
 }
 
+.main-logo-small {
+  display: none;
+}
+
 .highlight {
   color: #6464c8;
 }
@@ -262,6 +266,7 @@ li {
 /* Table Styles */
 
 table {
+  height: 100%;
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 3em;
@@ -271,7 +276,7 @@ table {
 th,
 td {
   border: 1px solid black;
-  padding: 10px;
+  padding: 0.625em;
   text-align: left;
 }
 
@@ -325,7 +330,8 @@ nav a {
   border-radius: 5px;
 }
 
-nav a:hover {
+nav a:hover,
+nav a:focus {
   background-color: #555;
   color: #222;
 }
@@ -397,7 +403,8 @@ footer #top {
   border-radius: 5px;
 }
 
-footer #top:hover {
+footer #top:hover,
+footer #top:focus {
   background-color: #f2f2f2;
   color: #000;
 }
@@ -411,7 +418,8 @@ footer img {
   width: 40px;
 }
 
-footer img:hover {
+footer img:hover,
+footer img:focus {
   border: 1px solid #6464c8;
   border-radius: 5px;
   background-color: #555;
@@ -432,7 +440,7 @@ footer img:hover {
 
 /* Responsive Design Breakpoints */
 
-@media (max-width: 1173px) {
+@media only screen and (max-width: 1173px) {
   .my-image {
     width: 20%;
     float: none;
@@ -447,7 +455,7 @@ footer img:hover {
 }
 
 
-@media (max-width: 920px) {
+@media only screen and (max-width: 920px) {
   .main-logo {
     display: none;
   }
@@ -469,13 +477,13 @@ footer img:hover {
   }
 }
 
-@media (max-width: 612px) {
+@media only screen and (max-width: 612px) {
   nav a {
     font-size: 0.75em;
   }
 }
 
-@media (max-width: 520px) {
+@media only screen and (max-width: 520px) {
   h1 {
     margin-left: 1em;
   }
@@ -490,5 +498,46 @@ footer img:hover {
 
   .decorative-panel-3 {
     padding-bottom: 0.5em;
+  }
+}
+
+/* Responsive Table Styles */
+@media only screen and (max-width: 500px) {
+  table {
+    width: 100%;
+    overflow-x: auto;
+    /* Enable horizontal scrolling on small screens */
+  }
+
+  th,
+  td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  th {
+    text-align: center;
+  }
+
+  thead {
+    display: none;
+    /* Hide the header row on small screens */
+  }
+
+  tbody tr {
+    margin-bottom: 1em;
+    border: 1px solid black;
+  }
+
+  .main-logo-small {
+    display: block;
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .alt-logo {
+    display: none;
+
   }
 }
