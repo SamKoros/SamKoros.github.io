@@ -399,7 +399,7 @@ footer {
   padding-right: 5%;
 }
 
-footer #top {
+footer #top-button {
   text-decoration: none;
   color: white;
   padding: 10px 15px;
@@ -407,7 +407,7 @@ footer #top {
   border-radius: 5px;
 }
 
-footer #top:hover {
+footer #top-button:hover {
   background-color: #f2f2f2;
   color: #000;
 }
@@ -486,7 +486,7 @@ footer img:hover {
     
   }
 
-  nav a:active, footer img:active, footer #top:active {    
+  nav a:active, footer img:active, footer #top-button:active {    
     background-color: initial;
     color: initial;
   }
