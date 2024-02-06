@@ -326,10 +326,7 @@ nav a {
   border-radius: 5px;
 }
 
-nav a:hover {
-  background-color: #555;
-  color: #222;
-}
+
 
 /* Hero Styles */
 
@@ -362,7 +359,7 @@ nav a:hover {
 #hero h1 {
   position: relative;
   z-index: 2;
-  
+
 }
 
 #hero p {
@@ -407,10 +404,7 @@ footer #top-button {
   border-radius: 5px;
 }
 
-footer #top-button:hover {
-  background-color: #f2f2f2;
-  color: #000;
-}
+
 
 footer img {
   margin-left: 1em;
@@ -420,13 +414,6 @@ footer img {
   height: 50px;
   width: auto;
   box-sizing: border-box;
-}
-
-footer img:hover {
-  border: 0.0625em solid #6464c8;
-  border-radius: 5px;
-  background-color: #555;
-  
 }
 
 
@@ -485,14 +472,8 @@ footer img:hover {
   nav a {
     font-size: 0.75em;
 
-    
-  }
 
-  nav a:active, footer img:active, footer #top-button:active {    
-    background-color: initial;
-    color: initial;
   }
-
 
 }
 
@@ -519,7 +500,7 @@ footer img:hover {
   table {
     width: 100%;
     overflow-x: auto;
-    
+
   }
 
   th,
@@ -536,12 +517,12 @@ footer img:hover {
 
   thead {
     display: none;
-    
+
   }
 
   tbody tr {
     margin-bottom: 1em;
-    
+
   }
 
   .main-logo-small {
@@ -554,7 +535,7 @@ footer img:hover {
     display: none;
 
   }
-  
+
   .linkedin-logo {
     flex-basis: 100%;
     padding-bottom: 1em;
@@ -562,5 +543,46 @@ footer img:hover {
 
   .github-logo {
     flex-basis: 100%;
+  }
+}
+
+/* Button Behavior: Desktop vs. Mobile */
+
+@media (hover: hover) {
+  nav a:hover {
+    background-color: #555;
+    color: #222;
+  }
+
+  footer #top-button:hover {
+    background-color: #f2f2f2;
+    color: #000;
+  }
+
+  footer img:hover {
+    border: 0.0625em solid #6464c8;
+    border-radius: 5px;
+    background-color: #555;
+
+  }
+}
+
+@media (hover: none) {
+
+  nav a:active {
+    background-color: #555;
+    color: #222;
+  }
+
+  footer #top-button:active {
+    background-color: #f2f2f2;
+    color: #000;
+  }
+
+  footer img:active {
+    border: 0.0625em solid #6464c8;
+    border-radius: 5px;
+    background-color: #555;
+
   }
 }
