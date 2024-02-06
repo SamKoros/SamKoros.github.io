@@ -484,6 +484,7 @@ footer img {
 
   .decorative-panel {
     font-size: 2em;
+    
   }
 
   .decorative-main-content {
@@ -543,6 +544,21 @@ footer img {
 
   .github-logo {
     flex-basis: 100%;
+  }
+
+  .decorative-panel {
+    font-size: 1.5em; 
+  }
+
+  .decorative-panel-2 {
+    font-size: 1.5em;
+
+  }
+
+  .decorative-panel-3 {
+
+    font-size: 1.5em;
+
   }
 }
 
